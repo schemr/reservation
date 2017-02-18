@@ -19,6 +19,9 @@
   "exclude": [
     "node_modules"
   ],
+  "type": [
+    "firebase"
+  ],
   "compileOnSave": false,
   "atom": {
     "rewriteTsconfig": false
