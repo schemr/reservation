@@ -2,8 +2,15 @@ import { NgModule, ErrorHandler } from '@angular/core';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { CloudSettings, CloudModule } from '@ionic/cloud-angular';
 import { MyApp } from './app.component';
-import { Page1 } from '../pages/page1/page1';
-import { Page2 } from '../pages/page2/page2';
+import { BasicPage } from '../pages/basic-demo/basic-demo';
+import { AuthPage } from '../pages/auth/auth';
+import { LoginComponent } from '../components/login/login';
+import { LogoutComponent } from '../components/logout/logout';
+import { HomePage } from '../pages/home/home';
+import { TabsPage } from '../pages/tabs/tabs';
+import { DataService } from '../providers/data/data.service';
+import { UserService } from '../providers/user/user.service';
+
 
 const CloudSettings: CloudSettings = {
   'core': {
@@ -14,8 +21,12 @@ const CloudSettings: CloudSettings = {
 @NgModule({
   declarations: [
     MyApp,
-    Page1,
-    Page2
+    BasicPage,
+    AuthPage,
+    HomePage,
+    TabsPage,
+    LoginComponent,
+    LogoutComponent
   ],
   imports: [
     IonicModule.forRoot(MyApp),
@@ -24,9 +35,14 @@ const CloudSettings: CloudSettings = {
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    Page1,
-    Page2
+    BasicPage,
+    AuthPage,
+    HomePage,
+    TabsPage
   ],
-  providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
+  providers: [
+    DataService,
+    UserService
+  ]
 })
 export class AppModule {}
