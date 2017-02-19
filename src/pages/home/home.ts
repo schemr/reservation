@@ -7,9 +7,11 @@ import { NavController } from 'ionic-angular';
   templateUrl: 'home.html'
 })
 export class HomePage {
-
+  public date: Date;
   constructor(public navCtrl: NavController) {
 
   }
-
+  ionViewDidLoad() {
+    this.date = new Date();
+  }
 }
