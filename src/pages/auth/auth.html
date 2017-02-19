@@ -7,7 +7,7 @@
 <ion-header>
     <ion-navbar>
         <ion-title>
-            Authentication Demo
+            로그인
         </ion-title>
     </ion-navbar>
 </ion-header>
@@ -15,7 +15,7 @@
 <ion-content padding class="page3">
 	<login *ngIf='!authStatus'></login>
 	<div *ngIf='authStatus'>
-		<h3>Nicely done!</h3>
+		<h3>로그인 상태 입니다</h3>
 		<p><strong>Your private message:</strong> {{message}}</p>
 		<div padding>
 			<logout></logout>
