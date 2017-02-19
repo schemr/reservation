@@ -4,6 +4,7 @@ import { CloudSettings, CloudModule } from '@ionic/cloud-angular';
 import { MyApp } from './app.component';
 import { RoomPage } from '../pages/room/room';
 import { AuthPage } from '../pages/auth/auth';
+import { SettingsPage } from '../pages/settings/settings';
 import { LoginComponent } from '../components/login/login';
 import { LogoutComponent } from '../components/logout/logout';
 import { HomePage } from '../pages/home/home';
@@ -23,6 +24,7 @@ const CloudSettings: CloudSettings = {
     MyApp,
     RoomPage,
     AuthPage,
+    SettingsPage,
     HomePage,
     TabsPage,
     LoginComponent,
@@ -37,6 +39,7 @@ const CloudSettings: CloudSettings = {
     MyApp,
     RoomPage,
     AuthPage,
+    SettingsPage,
     HomePage,
     TabsPage
   ],
