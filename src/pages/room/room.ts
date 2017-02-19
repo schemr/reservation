@@ -4,9 +4,9 @@ import { DataService } from '../../providers/data/data.service';
 
 @Component({
   selector: 'page-basic-demo',
-  templateUrl: 'basic-demo.html'
+  templateUrl: 'room.html'
 })
-export class BasicPage {
+export class RoomPage {
 
   public message: string;
   public direct: string;

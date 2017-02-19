@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { IonicApp, IonicModule } from 'ionic-angular';
 import { CloudSettings, CloudModule } from '@ionic/cloud-angular';
 import { MyApp } from './app.component';
-import { BasicPage } from '../pages/basic-demo/basic-demo';
+import { RoomPage } from '../pages/room/room';
 import { AuthPage } from '../pages/auth/auth';
 import { LoginComponent } from '../components/login/login';
 import { LogoutComponent } from '../components/logout/logout';
@@ -21,7 +21,7 @@ const CloudSettings: CloudSettings = {
 @NgModule({
   declarations: [
     MyApp,
-    BasicPage,
+    RoomPage,
     AuthPage,
     HomePage,
     TabsPage,
@@ -35,7 +35,7 @@ const CloudSettings: CloudSettings = {
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    BasicPage,
+    RoomPage,
     AuthPage,
     HomePage,
     TabsPage
