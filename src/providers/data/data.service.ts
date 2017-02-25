@@ -12,10 +12,6 @@ export class DataService {
 
     init() {
       const fbConf = {
-        // apiKey: "AIzaSyA6ub9T42zTQcxAjccxV8wiZfhFcnwKz44",
-        // authDomain: "reservation-a537b.firebaseapp.com",
-        // databaseURL: "https://reservation-a537b.firebaseio.com",
-        // storageBucket: "reservation-a537b.appspot.com" 
         apiKey: firebase_config.apiKey,
         authDomain: firebase_config.authDomain,
         databaseURL: firebase_config.databaseURL,
